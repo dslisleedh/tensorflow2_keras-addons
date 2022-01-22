@@ -27,8 +27,8 @@ class LsganLoss(tf.keras.losses.Loss):
 
 class WganLoss(tf.keras.losses.Loss):
     '''
-    fake label : -1
-    true label : 1
+    fake label : 1
+    true label : -1
     '''
     def call(self, label, pred):
         loss = tf.reduce_mean(
