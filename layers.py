@@ -42,3 +42,25 @@ class AdaIn(tf.keras.layers.Layer):
         mean_x, stddev_x = self.get_mean_stddev(x)
         mean_y, stddev_y = self.get_mean_stddev(y)
         return stddev_y * (x - mean_x) / stddev_x + mean_y
+
+
+class ReflectPadding2D(tf.keras.layers.Layer):
+    def __init(self, padding):
+        super(ReflectPadding2D, self).__init()
+        if len(padding) == 1:
+            self.padding = (padding, padding)
+        elif len(padding) > 2:
+            raise ValueError('ReflectPadding2D only supports 2-dimensional pad.')
+        else:
+            self.padding = padding
+
+    def call(self, inputs, *args, **kwargs):
+        padded = tf.pad(input = inputs,
+                        paddings=[[0,0],
+                                  [self.padding[0], self.padding[0]],
+                                  [self.padding[1], self.padding[1]],
+                                  [0,0]
+                                  ],
+                        mode='REFLECT'
+                        )
+        return padded
