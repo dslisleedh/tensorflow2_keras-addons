@@ -16,6 +16,8 @@
  
 ### AdaIn(Adaptive Instance Normalization) [[Code]](https://github.com/dslisleedh/tensorflow2_keras-addons/blob/e0e0261092504bd214c7d832b359b9d18af59db9/layers.py#L28)  
 
+### ReflectPadding2D[[Code]](https://github.com/dslisleedh/tensorflow2_keras-addons/blob/b788e2865a956bd9a44ec86322e1661c02872179/layers.py#L47)  
+
 ## losses  
 
 ### GAN Loss [[Code]](https://github.com/dslisleedh/tensorflow2_keras-addons/blob/41b362c37759bdc90ea0d3c17e6876873df7f3b9/losses.py#L4)  
