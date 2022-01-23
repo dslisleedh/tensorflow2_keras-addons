@@ -14,7 +14,7 @@
  |--|--|
  |![do](https://i.stack.imgur.com/CewjH.png)|![dc](https://i.stack.imgur.com/D1QC7.png)|  
  
-### AdaIn(Adaptive Instance Normalization) [[Code]](https://github.com/dslisleedh/tensorflow2_keras-addons/blob/41b362c37759bdc90ea0d3c17e6876873df7f3b9/layers.py#L11)  
+### AdaIn(Adaptive Instance Normalization) [[Code]](https://github.com/dslisleedh/tensorflow2_keras-addons/blob/e0e0261092504bd214c7d832b359b9d18af59db9/layers.py#L28)  
 
 ## losses  
 
