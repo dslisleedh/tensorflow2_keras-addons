@@ -45,7 +45,7 @@ class AdaIn(tf.keras.layers.Layer):
 
 
 class ReflectPadding2D(tf.keras.layers.Layer):
-    def __init(self, padding):
+    def __init__(self, padding):
         super(ReflectPadding2D, self).__init__()
         if len(padding) == 1:
             self.padding = (padding, padding)
@@ -64,3 +64,12 @@ class ReflectPadding2D(tf.keras.layers.Layer):
                         mode='REFLECT'
                         )
         return padded
+
+
+class PixelNormalization(tf.keras.layers.Layer):
+    def __init__(self, eps=1e-8):
+        super(PixelNormalization, self).__init__()
+        self.eps = eps
+
+    def call(self, inputs, **kwargs):
+        return inputs * tf.math.rsqrt(tf.reduce_mean(tf.square(inputs), axis=-1, keepdims=True) + self.eps)
