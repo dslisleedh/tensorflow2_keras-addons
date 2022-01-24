@@ -46,7 +46,7 @@ class AdaIn(tf.keras.layers.Layer):
 
 class ReflectPadding2D(tf.keras.layers.Layer):
     def __init(self, padding):
-        super(ReflectPadding2D, self).__init()
+        super(ReflectPadding2D, self).__init__()
         if len(padding) == 1:
             self.padding = (padding, padding)
         elif len(padding) > 2:
