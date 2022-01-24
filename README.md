@@ -18,6 +18,9 @@
 
 ### ReflectPadding2D [[Code]](https://github.com/dslisleedh/tensorflow2_keras-addons/blob/b788e2865a956bd9a44ec86322e1661c02872179/layers.py#L47)  
 
+Padding 비교  
+![PAD](https://github.com/dslisleedh/tensorflow2_keras-addons/blob/main/img/paddings.png)
+
 ### PixelNormalization [[Code]](https://github.com/dslisleedh/tensorflow2_keras-addons/blob/b482ceee00303c52069e0e83166fce98a25efaa6/layers.py#L69)
 
 ## losses  
